@@ -15,11 +15,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* jQuery enabled behavior for mobile */
-/*
-.touch .mytouch.no-hover .fa {
-	display: none !important;	
-}
-*/
+
 
 .carousel-indicators{
 display: none;
@@ -349,8 +345,8 @@ header .inbody .navbar-brand span.subhead {
 .roadMapImgRight {
     position: absolute;
     top: 50%;
-    left: 70%;
-    transform: translate(-50%, -50%);
+    left: 50%;
+    transform: translate(-50%, -200%);
     color: gray;
     background-color: #fff;
     border-radius: 25px;
@@ -463,17 +459,6 @@ footer .navbar-nav>li.vimeo a:hover
 
 }
 
-/*thumbnail*/
-.thumbnail {
-	background-color: transparent;
-	border: none;
-}
-
-.thumbnail h3 {
-	color: white;
-	font-size: 1.2em;
-}
-
 
 .btn-primary { 
     background-color: gray !important; 
@@ -551,14 +536,49 @@ and (max-height: 320px) {
     .myhoi{
     font-size: 3em;
     font-weight: 350;
-    }   
+    }
+
+}
+
+@media only screen 
+and (min-width: 320px)
+and (max-width: 450px) {
+  
+.roadMapImgRight {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    
+   
+  }
 }
 
 @media only screen 
 and (min-width: 450px)
+and (max-width: 600px) {
+
+.roadMapImgRight {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -120%);
+    
+   
+  }
+}
+
+@media only screen 
+and (min-width: 600px)
 and (max-width: 768px) {
-  .service p {
-    padding: 0 20%;
+  
+.roadMapImgRight {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    
+   
   }
 }
 
@@ -570,4 +590,13 @@ and (max-width: 768px) {
 	footer .navbar-default{
 		margin: 0;
 	}
+
+    .roadMapImgRight {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -180%);
+    
+   
+  }
 }
