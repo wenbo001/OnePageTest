@@ -1,0 +1,195 @@
+/* mutiple class */
+.pageHead{
+    font-weight: 450;
+    font-size: 1.2em;
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    
+}
+
+/* nav */
+.myNavBt{
+    background-color: #4286f4;
+}
+
+.myNav{
+    background-color: white;
+}
+.myNav ul{
+    color: #4286f4;
+}
+
+.myMainImg{
+    background-image: url('../img/header.jpg'); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center center;
+    margin-bottom:0;
+}
+
+.myMainText {
+    color: white;
+}
+
+.myMainBt{
+    color: white;
+    background-color: #4286f4;
+    text-align: center;
+    font-weight: 450;
+    font-size: 0.8em;
+    padding: 5px 10px;
+}
+/* benefits page */
+
+#benefits {
+    background: #fff;
+}
+
+#benefits li {
+    list-style:none;
+}
+#benefits li img {
+    margin-left: -50px;
+}
+
+.benefitText {
+    font-size: 0.8em;
+    color: black;
+}
+
+/* concept page*/
+
+#concept {
+    background-color: lightgray;
+}
+
+.concept h2{
+    font-size: 0.8em;
+    font-weight: 350;
+    text-align: left;
+    color: #4286f4;
+}
+
+.myRoadMapImg{
+    background-image: url('../img/app.png'); 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center center;
+    margin-bottom:0;
+}
+/* road map page */
+#roadMap {
+    color: gray;
+    background-color: #fff;
+  }
+  
+  #roadMap li{
+      list-style:none;
+  }
+  
+  .roadMapHead{
+      font-weight: 450;
+      font-size: 1.2em;
+      color: white;
+      text-align: center;
+      margin-bottom: 20px;
+  }
+
+.roadMapFourImgText{
+    background-color: #fff;
+    border-radius: 25px;
+    border: 2px solid #fff;
+    padding: 20px;
+}
+
+.roadMapSecond{
+    text-align: left;
+}
+
+.roadMapSecondP{
+    text-align: left;
+    font-weight: 350;
+    font-size: 1.0em;
+}
+.bluePageHead{
+    font-weight: 450;
+    font-size: 1.2em;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+
+.blueBg{
+    background-color: #4286f4;
+    color: white;
+}
+
+/* parnters page */
+#partners {
+    color: gray;
+}
+
+#partners li{
+    list-style:none;
+
+}
+
+/**  Footer **/
+
+footer {
+    background-color: darkblue;
+    color: white;
+    font-size: .8em;
+    padding: 20px 0 20px 0;
+    text-align: left;
+  }
+  
+    
+  
+  footer .navbar-nav>li.facebook a:hover,
+  footer .navbar-nav>li.linkedin a:hover,
+  footer .navbar-nav>li.github a:hover,
+  footer .navbar-nav>li.vimeo a:hover
+  {
+      opacity: .6;
+  }
+  
+.quick-info {
+    text-align: center;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.quick-info p {
+    padding-top: 15px;
+}
+.quick-info a {
+ color: gray;
+}
+.quick-info a:hover{
+ color: blue;
+}
+
+/*footer*/
+.modal-footer { 
+    clear: both; 
+} 
+@media (max-width:768px) {
+	footer .navbar-nav>li.facebook a,footer .navbar-nav>li.linkedin a,footer .navbar-nav>li.github a ,footer .navbar-nav>li.vimeo a{
+		width: 100%;
+	}
+	footer .navbar-default{
+		margin: 0;
+	}
+
+    
+   
+}
+
