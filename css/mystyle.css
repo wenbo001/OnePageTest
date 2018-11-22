@@ -221,9 +221,6 @@ footer {
     footer .st div {
       display: inline-block;
     }
-    #sconcept .pic {
-      margin-left: 20%;
-    }
     
   }
   @media (max-width: 353px) {
