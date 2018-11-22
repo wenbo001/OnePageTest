@@ -1,232 +1,245 @@
-/* mutiple class */
-.pageHead{
-    font-weight: 450;
-    font-size: 1.2em;
+
+#roadMap li {
+  list-style: none;
+}
+
+#partners li {
+  list-style: none; 
+}
+
+@font-face {
+    font-family: CalibriRegular;
+    src: url(../fonts/calibri.ttf);
+  }
+  @font-face {
+    font-family: PierBold;
+    src: url(../fonts/pier-bold.otf);
+  }
+  body {
+    font-family: "CalibriRegular";
+  }
+  
+  .pageHead, .roadMapHead, .bluePageHead {
+    font-family: "PierBold";
+    font-weight: 450em;
+    font-size: 1.8 em;
     color: black;
     text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
     text-transform: uppercase;
-}
-
-/* nav */
-.myNavBt{
-    background-color: #4286f4;
-}
-
-.myNav{
-    background-color: white;
-}
-.myNav ul{
-    color: #4286f4;
-}
-
-.myMainImg{
-    background-image: url('../img/header.jpg'); 
-    background-repeat: no-repeat; 
-    background-size: cover; 
+  }
+  
+  .myNavBt {
+    background-color: #1882be;
+  }
+  
+  .myNav ul {
+    color: #1882be;
+  }
+  
+  /* solution page */
+  .myMainImg {
+    background-image: url("../img/header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     background-position: center center;
-    margin-bottom:0;
-    padding: 50px;
-}
-
-.myMainText {
+    padding: 180px;
+  }
+  
+  .myMainText, .myMainTextH1, .myMainTextH2, .readMoreBt {
     color: white;
     text-align: center;
-}
-
-.myMainText h1 {
-    font-weight: 450;
-    font-size: 1.8em;
+    font-family: "CalibriRegular";
+  }
+  
+  .myMainTextH1 {
+    font-family: "PierBold";
+    font-weight: 450em;
+    font-size: 1.8 em;
     margin-top: 10px;
     margin-bottom: 10px;
-}
-.myMainText h2 {
-    font-weight: 350;
-    font-size: 1.0em;
+  }
+  
+  .myMainTextH2 {
+    font-family: "PierBold";
+    font-weight: 350em;
+    font-size: 1.2 em;
     margin-top: 10px;
     margin-bottom: 10px;
-}
-.readMoreBt{
-    color: white;
-    background-color: #4286f4;
-    text-align: center;
-    font-weight: 450;
-    font-size: 0.8em;
+  }
+  
+  .readMoreBt {
+    background-color: #1882be;
+    font-weight: 450em;
+    font-size: 1.2 em;
     padding: 5px 10px;
-}
-/* benefits page */
-
-#benefits {
+  }
+  
+  /* benefits page */
+  #benefits {
     background: #fff;
-}
-
-#benefits li {
-    list-style:none;
-    margin: 10px;
-}
-#benefits li img {
-    margin-left: -50px;
-}
-
-.benefitText {
-    font-size: 0.8em;
+  }
+  
+  .benefitTextOne .benefitTextTwo {
+    font-size: 0.8 em;
     color: black;
-}
-
-/* concept page*/
-
-#concept {
+  }
+  
+  #benefits .row .benefitTextOne ul li .p1:nth-child(1)::before {
+    content: url("../img/icon_watch.png");
+    margin-left: -30px;
+    margin-right: 30px;
+  }
+  
+  #benefits .row .benefitTextOne ul li .p2:nth-child(1)::before {
+    content: url("../img/icon_money_bag.png");
+    margin-left: -30px;
+    margin-right: 30px;
+  }
+  
+  #benefits .row .benefitTextOne ul li .p3:nth-child(1)::before {
+    content: url("../img/icon_cloud.png");
+    margin-left: -30px;
+    margin-right: 30px;
+  }
+  
+  #benefits .row .benefitTextTwo ul li .p1:nth-child(1)::before {
+    content: url("../img/icon_hight_cost.png");
+    margin-left: -30px;
+    margin-right: 30px;
+  }
+  
+  #benefits .row .benefitTextTwo ul li .p2:nth-child(1)::before {
+    content: url("../img/icon_missing.png");
+    margin-left: -30px;
+    margin-right: 30px;
+  }
+  
+  #benefits .row .benefitTextTwo ul li .p3:nth-child(1)::before {
+    content: url("../img/icon_struggling.png");
+    margin-left: -30px;
+    margin-right: 30px;
+  }
+  
+  /* concept page */
+  #concept {
     background-color: lightgray;
     padding: 10px;
-}
-
-.concept h2{
-    font-size: 0.8em;
-    font-weight: 350;
+  }
+  
+  .concept h2 {
+    font-family: "PierBold";
+    font-weight: 350em;
+    font-size: 1.2 em;
     text-align: left;
-    color: #4286f4;
-}
-
-.myRoadMapImg{
-    background-image: url('../img/app.png'); 
-    background-repeat: no-repeat; 
-    background-size: cover; 
-    background-position: center center;
-    padding-bottom:100px;
-}
-/* road map page */
-#roadMap {
+    color: #1882be;
+  }
+  
+  /* road map page */
+  #roadMap {
     color: gray;
     background-color: #fff;
   }
   
-  #roadMap li{
-      list-style:none;
+  .roadMapHead {
+    color: white;
   }
   
-  .roadMapHead{
-      font-weight: 450;
-      font-size: 1.2em;
-      color: white;
-      text-align: center;
-      margin-bottom: 20px;
-      padding: 20px;
-  }
-
-.roadMapFourImgText{
+  .roadMapFourImgText {
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.78);
     padding: 50px;
-}
-
-
-.roadMapSecond{
+  }
+  
+  .roadMapSecond {
     text-align: left;
     padding-bottom: 50px;
-}
-
-.roadMapSecondP{
+  }
+  
+  .roadMapSecondP {
     text-align: left;
     font-weight: 350;
-    font-size: 1.0em;
-}
-.bluePageHead{
-    font-weight: 450;
-    font-size: 1.2em;
+    font-size: 1em;
+  }
+  
+  .myRoadMapImg {
+    background-image: url("../img/app.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 180px;
+  }
+  
+  .bluePageHead {
     color: white;
-    text-align: center;
+  }
+  
+  .blueBg {
+    background-color: #1882be;
+    color: white;
     padding-top: 30px;
-    margin-bottom: 20px;
-}
-
-.blueBg{
-    background-color: #4286f4;
-    color: white;
-}
-
-/* parnters page */
-#partners {
+  }
+  
+  /* parnters page */
+  #partners {
     color: gray;
-}
-
-#partners li{
-    list-style:none;
-
-}
-.partnersOne{
+  }
+  
+  .partnersOne {
     padding-bottom: 50px;
-}
-/**  Footer **/
-footer {
+  }
+  
+  /**  Footer */
+  footer {
     padding: 3% 0 2% 0;
     background-color: #20435f;
     font-size: 0.8em;
     color: white;
   }
+  
   footer .col-left {
     text-align: left;
     padding-left: 40px;
   }
+  
   footer .col-right {
     text-align: right;
     padding-right: 40px;
   }
-  /* footer .col-left .row:nth-child(2) {
-    margin-top: 20px;
-  }
-  footer .col-right .row:nth-child(2) {
-    margin-top: 30px;
-  }
-  footer .st a {
-    margin: 0 5px 0 5px;
-  } */
   
-.quick-info {
-    text-align: center;
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
+  /* @media(max-width: 768px){
+    .myMainTextH1{
+        font-size: 80%
+    }
+    .myMainTextH2{
+        font-size: 80%
+    }
+  } */
 
-.quick-info p {
-    padding-top: 15px;
-}
-.quick-info a {
- color: gray;
-}
-.quick-info a:hover{
- color: blue;
-}
-
-/*footer*/
-
-@media (max-width: 500px) {
+  @media (max-width: 500px) {
     footer .col-left {
       width: 100%;
       text-align: center;
     }
+  
     footer .col-right {
       text-align: center;
       width: 100%;
     }
+  
     footer .st {
       margin-top: 20px;
       margin-right: -40px;
       text-align: center;
     }
+  
     footer .st div {
       display: inline-block;
     }
-    
+
   }
   @media (max-width: 353px) {
-    #concept .pic {
-      margin-left: 0%;
-    }
-    
+    margin-left: 0%;
   }
   

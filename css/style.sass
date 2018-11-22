@@ -1,0 +1,223 @@
+@font-face 
+  font-family: CalibriRegular
+  src: url(../fonts/calibri.ttf)
+
+@font-face 
+  font-family: PierBold
+  src: url(../fonts/pier-bold.otf)
+
+$pageHeadFont: "PierBold"
+$pagePFont: "CalibriRegular"
+
+$mainBlue: #1882be
+$darkBlue: #20435f
+$fontSizeSmall: 0.8 em
+$fontSizeRegular: 1.2 em
+$fontSizeLarge: 1.8 em
+$fontWeightBold:450em
+$fontWeightRegular:350em
+
+$headerImgUrl: url('../img/header.jpg')
+$benefitsOneImgUrl1: url('../img/icon_watch.png')
+$benefitsOneImgUrl2: url('../img/icon_money_bag.png')
+$benefitsOneImgUrl3: url('../img/icon_cloud.png')
+$benefitsTwoImgUrl1: url('../img/icon_hight_cost.png')
+$benefitsTwoImgUrl2: url('../img/icon_missing.png')
+$benefitsTwoImgUrl3: url('../img/icon_struggling.png')
+$conceptImgUrl:url('../img/app.png')
+
+@mixin loadImageBg($url, $padding) 
+  background-image: $url
+  background-repeat: no-repeat 
+  background-size: cover
+  background-position: center center
+  padding: $padding
+
+@mixin imageBefore($url) 
+  content: $url
+  margin-left: -30px
+  margin-right: 30px
+  
+body
+  font-family: $pagePFont
+
+
+.pageHead
+  font-family: $pageHeadFont
+  font-weight: $fontWeightBold
+  font-size: $fontSizeLarge
+  color: black
+  text-align: center
+  margin-top: 30px
+  margin-bottom: 30px
+  text-transform: uppercase
+
+.myNavBt
+  background-color: $mainBlue
+    
+.myNav ul
+  color: $mainBlue
+
+/* solution page */
+.myMainImg
+  @include loadImageBg($headerImgUrl, 180px)
+
+.myMainText 
+  color: white
+  text-align: center
+  font-family: $pagePFont
+
+.myMainTextH1 
+  @extend .myMainText
+  font-family: $pageHeadFont
+  font-weight: $fontWeightBold
+  font-size: $fontSizeLarge
+  margin-top: 10px
+  margin-bottom: 10px
+
+.myMainTextH2
+  @extend .myMainText
+  font-family: $pageHeadFont
+  font-weight: $fontWeightRegular
+  font-size: $fontSizeRegular
+  margin-top: 10px
+  margin-bottom: 10px
+
+.readMoreBt
+  @extend .myMainText
+  background-color: $mainBlue
+  font-weight: $fontWeightBold
+  font-size: $fontSizeRegular
+  padding: 5px 10px
+
+/* benefits page */
+#benefits 
+  background: #fff
+
+#benefits li 
+  list-style:none
+
+.benefitTextOne .benefitTextTwo 
+  font-size: $fontSizeSmall
+  color: black
+
+#benefits .row .benefitTextOne ul li .p1:nth-child(1)::before 
+  @include imageBefore($benefitsOneImgUrl1)
+
+#benefits .row .benefitTextOne ul li .p2:nth-child(1)::before 
+  @include imageBefore($benefitsOneImgUrl2)
+  
+#benefits .row .benefitTextOne ul li .p3:nth-child(1)::before 
+  @include imageBefore($benefitsOneImgUrl3)
+
+#benefits .row .benefitTextTwo ul li .p1:nth-child(1)::before 
+  @include imageBefore($benefitsTwoImgUrl1)
+
+#benefits .row .benefitTextTwo ul li .p2:nth-child(1)::before 
+  @include imageBefore($benefitsTwoImgUrl2)
+  
+#benefits .row .benefitTextTwo ul li .p3:nth-child(1)::before 
+  @include imageBefore($benefitsTwoImgUrl3)
+  
+/* concept page*/
+#concept 
+  background-color: lightgray
+  padding: 10px
+
+.concept h2
+  font-family: $pageHeadFont
+  font-weight: $fontWeightRegular
+  font-size: $fontSizeRegular
+  text-align: left
+  color: $mainBlue
+
+/* road map page */
+#roadMap 
+  color: gray
+  background-color: #fff
+  
+  
+#roadMap li
+  list-style:none
+  
+.roadMapHead
+  @extend .pageHead
+  color: white
+
+.roadMapFourImgText
+  border-radius: 10px
+  background-color: rgba(255, 255, 255, 0.78)
+  padding: 50px
+
+.roadMapSecond
+  text-align: left
+  padding-bottom: 50px
+
+
+.roadMapSecondP
+  text-align: left
+  font-weight: 350
+  font-size: 1.0em
+
+
+.myRoadMapImg
+  @include loadImageBg($conceptImgUrl, 180px)
+  
+.bluePageHead
+  @extend .pageHead
+  color: white
+
+.blueBg
+  background-color: $mainBlue
+  color: white
+  padding-top: 30px
+
+/* parnters page */
+#partners 
+  color: gray
+
+#partners li
+  list-style:none
+
+.partnersOne
+  padding-bottom: 50px
+
+/**  Footer **/
+footer 
+  padding: 3% 0 2% 0
+  background-color: $darkBlue
+  font-size: 0.8em
+  color: white
+  
+footer .col-left 
+  text-align: left
+  padding-left: 40px
+  
+footer .col-right 
+  text-align: right
+  padding-right: 40px
+  
+// media
+@media (max-width: 500px) 
+  footer .col-left 
+    width: 100%
+    text-align: center
+    
+  footer .col-right 
+    text-align: center
+    width: 100%
+      
+  footer .st 
+    margin-top: 20px
+    margin-right: -40px
+    text-align: center
+    
+  footer .st div 
+    display: inline-block
+    
+@media (max-width: 353px) 
+  #concept .pic 
+  margin-left: 0%
+    
+    
+  
