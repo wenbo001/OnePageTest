@@ -19,7 +19,7 @@ body {
   font-family: "CalibriRegular";
 }
 
-.pageHead, .roadMapHead, .bluePageHead {
+.pageHead, .roadMapHead h1, .bluePageHead {
   font-family: "PierBold";
   font-weight: 450em;
   font-size: 1.8em;
@@ -44,16 +44,19 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  padding: 180px;
+  padding: 150px;
 }
 
 .myMainText, .myMainText h1, .myMainText h2, .readMoreBt {
   color: white;
   text-align: center;
   font-family: "CalibriRegular";
+  /* padding-top: 50px; */
+  /* padding-bottom: 50px; */
+  
 }
 
-.myMainText h1, .readMoreBt h1 {
+.myMainText h1, .readMoreBt {
   font-family: "PierBold";
   font-weight: 450em;
   font-size: 1.8em;
@@ -61,7 +64,7 @@ body {
   margin-bottom: 10px;
 }
 
-.myMainText h2, .readMoreBt h2 {
+.myMainText h2, .readMoreBt {
   font-family: "PierBold";
   font-weight: 350em;
   font-size: 1.2em;
@@ -142,7 +145,7 @@ body {
   background-color: #fff;
 }
 
-.roadMapHead {
+.roadMapHead h1{
   color: white;
 }
 
@@ -163,12 +166,15 @@ body {
   font-size: 1em;
 }
 
+/* .roadMapFourImgText img{
+  width: 100%;
+} */
 .myRoadMapImg {
   background-image: url("../img/app.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  padding: 180px;
+  padding: 150px;
 }
 
 .bluePageHead {
@@ -179,6 +185,8 @@ body {
   background-color: #1882be;
   color: white;
   padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
 }
 
 /* parnters page */
@@ -188,6 +196,11 @@ body {
 
 .partnersOne {
   padding-bottom: 50px;
+  text-align: center;
+}
+
+.partnersOne img{
+  padding: 30px;
 }
 
 /**  Footer */
@@ -230,5 +243,18 @@ footer .col-right {
   }
 }
 @media (max-width: 353px) {
-  margin-left: 0%;
+  
+}
+@media (max-width: 600px) {
+  .myMainImg{
+    padding: 0;
+  }
+  .myRoadMapImg{
+    padding: 0;
+  }
+  .myMainText{
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
 }
